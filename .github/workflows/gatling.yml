@@ -16,7 +16,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
     - name: Run Gatling Tests
-      run: mvn gatling:test -Dgatling.simulationClass=BasicSimulation
+      run: mvn gatling:test -Dgatling.simulationClass=com.example.spring_boot_gatling.BasicSimulation
     - name: Upload Results
       uses: actions/upload-artifact@v4
       with:
